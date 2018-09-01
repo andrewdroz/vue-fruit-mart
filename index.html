@@ -45,12 +45,14 @@
                     <h1 class="title is-size-1">
                         Your basket:
                     </h1>
+                    <br/>
                     <h2 class="subtitle is-size-4">
                         <ul>
                             <li v-for="fruit in fruits" v-bind:key="fruit.id">
                                 {{ fruit.numInCart }} {{ fruit.name }}
                             </li>
                         </ul>
+                        <br/><p>Total price: <span class="has-text-weight-semibold">${{ getTotalPrice }}</span></p>
                     </h2>
                 </div>
             </div>

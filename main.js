@@ -5,8 +5,10 @@ let myApp = new Vue({
     },
     computed: {
         getTotalPrice() {
-            return 1;
-            //return 'background: url(' + this + '); background-size: cover; display:block;';
+            const subtotalArr = this.fruits.map(fruit => fruit.numInCart*fruit.price);
+            const sumReduce = (a, b) => a + b;
+            const totalPrice = subtotalArr.reduce(sumReduce, 0).toFixed(2);
+            return totalPrice;
         }
     }
 });

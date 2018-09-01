@@ -1,0 +1,28 @@
+html {
+    /* defines what 1rem is*/
+    font-size: 62.5%;
+}
+.container {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+.fruits-bar {
+    height: 20vh;
+    min-height: 20rem;
+}
+.button {
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+}
+.marginauto {
+    margin: 0 auto 2rem;
+    display: block;
+}
+.footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0.5rem 1.5rem 1rem;
+}

@@ -5,21 +5,21 @@ window.Seed = function(){
             name: 'Apples',
             url: 'images/apples.jpg',
             price: 0.4,
-            numInCart: 48
+            numInCart: 0
         },
         {
             id: 2,
             name: 'Oranges',
             url: 'images/oranges.jpg',
             price: 0.8,
-            numInCart: 200
+            numInCart: 0
         },
         {
             id: 3,
             name: 'Durians',
             url: 'images/durians.jpg',
             price: 2.1,
-            numInCart: 26
+            numInCart: 0
         }
     ];
 

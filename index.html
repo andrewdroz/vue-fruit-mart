@@ -26,18 +26,39 @@
             </div>
         </section>
 
-        <div class="container is-fluid">
-            <section class="columns fruits-bar is-mobile" >
-                
-                <figure class="column" v-for="fruit in fruits" v-bind:key="fruit.id">
-                    <button class="button marginauto" 
-                            v-bind:style="{ 'background-image' : 'url(' + fruit.url + ')' } "
-                            v-on:click="fruit.numInCart++">
-                    </button>
-                </figure>
-                
-            </section>
-        </div>
+        <section class="section section-content">
+            <div class="container is-fluid">
+                <div class="columns is-variable is-8 is-centered" >
+                    <div class="column is-one-quarter" v-for="fruit in fruits" v-bind:key="fruit.id">
+                        <div class="card bm--card-equal-height">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img v-bind:src="fruit.url" v-bind:alt="fruit.name">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media media-content">
+                                    <p class="title is-4">{{ fruit.name }}</p>
+                                </div>
+                                <div class="content">
+                                    {{ fruit.description }}
+                                </div>
+                            </div>    
+                            <footer class="card-footer">
+                                <div class="card-footer-item">
+                                    <button class="button is-success is-outlined" v-on:click="fruit.numInCart++"><ion-icon name="add"></ion-icon></button>
+                                </div>
+                                <div class="card-footer-item">
+                                    <button class="button is-danger is-outlined" v-on:click="fruit.numInCart--"><ion-icon name="remove"></ion-icon></button>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        
 
         <main class="hero is-light">
             <div class="hero-body">
@@ -68,6 +89,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
     <script src="./fruityData.js"></script>
     <script src="./main.js"></script>
 </body>

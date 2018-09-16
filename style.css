@@ -6,16 +6,21 @@ html {
     padding-top: 6rem;
     padding-bottom: 3rem;
 }
-.fruits-bar {
-    height: 20vh;
-    min-height: 20rem;
+.section-content {
+    font-size: 1.3rem;
 }
-.button {
+.bm--card-equal-height {
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    width: 50%;
-    background-size: cover;
-}
-.marginauto {
-    margin: 0 auto 2rem;
-    display: block;
-}
+ }
+ .bm--card-equal-height .card-footer {
+    margin-top: auto;
+ }
+ .card-footer-item button {
+     font-size: 2rem;
+ }
+ /* Remove Firefox's inner focus indicator for buttons */
+ .card-footer-item button::-moz-focus-inner {
+    border:0;
+  }

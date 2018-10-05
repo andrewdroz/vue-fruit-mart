@@ -1,0 +1,17 @@
+{
+  "name": "vue-fruit-mart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Andrew de Rozario",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  },
+  "dependencies": {
+    "vue": "^2.5.17"
+  }
+}

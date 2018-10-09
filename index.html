@@ -49,7 +49,7 @@
                                     <button class="button is-success is-outlined" v-on:click="fruit.numInCart++"><ion-icon name="add"></ion-icon></button>
                                 </div>
                                 <div class="card-footer-item">
-                                    <button class="button is-danger is-outlined" v-on:click="fruit.numInCart--"><ion-icon name="remove"></ion-icon></button>
+                                    <button class="button is-danger is-outlined" v-on:click="fruit.numInCart > 0 ? fruit.numInCart-- : 0"><ion-icon name="remove"></ion-icon></button>
                                 </div>
                             </footer>
                         </div>
